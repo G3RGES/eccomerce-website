@@ -1,12 +1,13 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect } from "react";
 
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from "./components/Navbar";
 
 const App = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     AOS.init({
       offset: 100,
       duration: 800,
@@ -16,7 +17,11 @@ const App = () => {
     AOS.refresh();
   }, []);
 
-  return <div className="bg-primary">App</div>;
+  return (
+    <div className="bg-primary">
+      <Navbar />
+    </div>
+  );
 };
 
 export default App;
