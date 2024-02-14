@@ -18,7 +18,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-primary">
+    <div className="">
       <Navbar />
     </div>
   );
