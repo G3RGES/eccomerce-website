@@ -8,6 +8,7 @@ import { FaCaretDown } from "react-icons/fa";
 
 // assets
 import Logo from "../assets/logo.png";
+import DarkMode from "./DarkMode";
 
 // components
 // import DarkMode from "./DarkMode";
@@ -111,6 +112,9 @@ const Navbar = () => {
             </button>
 
             {/* dark mode switch*/}
+            <div className="">
+              <DarkMode />
+            </div>
           </div>
         </div>
       </div>
