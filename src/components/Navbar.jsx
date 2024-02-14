@@ -76,8 +76,9 @@ const Navbar = () => {
               Shopsy
             </a>
           </div>
+
           {/* search bar and order button */}
-          <div className="">
+          <div className="flex justify-between items-center gap-4">
             <div className="relative group hidden sm:block">
               <input
                 type="text"
@@ -92,24 +93,28 @@ const Navbar = () => {
               absolute top-1/2 -translate-y-1/2 right-3"
               />
             </div>
-          </div>
-          {/* order button */}
-          <button
-            className="bg-gradient-to-r from-primary to-secondary
+
+            {/* order button */}
+            <button
+              className="bg-gradient-to-r from-primary to-secondary
              transition-all duration-200 text-white  py-1 px-4 rounded-full
               flex items-center gap-3 group"
-            onClick={() => alert("order not available yet")}
-          >
-            <span className="group-hover:block hidden transition-all duration-200 ">
-              Order
-            </span>
-            <FaCartShopping
-              className="text-xl text-white drop-shadow-sm
+              onClick={() => alert("order not available yet")}
+            >
+              <span className="group-hover:block hidden transition-all duration-200 ">
+                Order
+              </span>
+              <FaCartShopping
+                className="text-xl text-white drop-shadow-sm
              cursor-pointer"
-            />
-          </button>
+              />
+            </button>
+
+            {/* dark mode switch*/}
+          </div>
         </div>
       </div>
+
       {/* lower navbar */}
       <div className=""></div>
     </div>
