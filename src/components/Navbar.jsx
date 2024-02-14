@@ -71,7 +71,7 @@ const Navbar = () => {
           </div>
           {/* search bar and order button */}
           <div className="">
-            <div className="">
+            <div className="group">
               <input
                 type="text"
                 placeholder="Search..."
