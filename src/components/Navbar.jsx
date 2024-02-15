@@ -8,10 +8,9 @@ import { FaCaretDown } from "react-icons/fa";
 
 // assets
 import Logo from "../assets/logo.png";
-import DarkMode from "./DarkMode";
 
 // components
-// import DarkMode from "./DarkMode";
+import DarkMode from "./DarkMode";
 
 const Menu = [
   {
@@ -120,7 +119,29 @@ const Navbar = () => {
       </div>
 
       {/* lower navbar */}
-      <div className=""></div>
+      <div className="flex justify-center">
+        <ul className="sm:flex hidden items-center gap-4">
+          {Menu.map((link) => (
+            <li className="" key={link.id}>
+              <a
+                className="inline-block px-4 hover:text-primary duration-200"
+                href={link.link}
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
+          {/* drop down */}
+          <li className="">
+            <a className="flex items-center gap-[2px] py-2 " href="#">
+              Trending
+              <span>
+                <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
