@@ -4,7 +4,10 @@ import React, { useEffect } from "react";
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+// components
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 const App = () => {
   useEffect(() => {
@@ -20,6 +23,7 @@ const App = () => {
   return (
     <div className="">
       <Navbar />
+      <Hero />
     </div>
   );
 };
