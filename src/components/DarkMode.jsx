@@ -10,6 +10,9 @@ const DarkMode = () => {
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
 
+  // const element = document.documentElement; //* HTML element //* TESTING
+  // console.log(element); //* TESTING
+
   return (
     <div className="relative">
       {/* light mode */}
