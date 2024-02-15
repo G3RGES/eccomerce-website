@@ -29,12 +29,12 @@ const Menu = [
     link: "/#",
   },
   {
-    id: 3,
+    id: 4,
     name: "Mens Wear",
     link: "/#",
   },
   {
-    id: 3,
+    id: 5,
     name: "Electronics",
     link: "/#",
   },
@@ -132,13 +132,32 @@ const Navbar = () => {
             </li>
           ))}
           {/* drop down */}
-          <li className="">
+          <li className="group relative cursor-pointer">
             <a className="flex items-center gap-[2px] py-2 " href="#">
-              Trending
+              Trending Products
               <span>
                 <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
               </span>
             </a>
+            <div
+              className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md
+            bg-white dark:bg-gray-900 drop-shadow-md p-2 "
+            >
+              <ul className="">
+                {DropdownLinks.map((link) => (
+                  <li className="" key={link.id}>
+                    <a
+                      className="inline-block w-full rounded-md p-2 dark:bg-gray-950/60
+                      dark:hover:bg-tertiary mb-2
+                       dark:text-white hover:bg-primary/20 shadow-md"
+                      href={link.link}
+                    >
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
