@@ -65,7 +65,7 @@ const Navbar = () => {
     duration-200 relative z-40 "
     >
       {/* upper navbar */}
-      <div className="bg-primary/40 py-2">
+      <div className="bg-primary/40 dark:bg-tertiary/40 py-2">
         <div className="container flex justify-between items-center ">
           <div className="">
             <a
