@@ -31,6 +31,19 @@ const imageList = [
 ];
 
 const Hero = () => {
+  var settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 800,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    cssEase: "ease-in-out",
+    pauseOnHover: false,
+    pauseOnFocus: true,
+  };
+
   return (
     <div
       className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100
