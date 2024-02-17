@@ -36,7 +36,45 @@ const ProductsData = [
 const TopProducts = () => {
   return (
     <div>
-      <div className=""></div>
+      <div className="container">
+        {/* header section */}
+        <div className="text-left mb-10 ">
+          <p
+            data-aos="fade-up"
+            className="text-sm text-primary dark:text-tertiary "
+          >
+            Top Rated Products for you
+          </p>
+          <h1 data-aos="zoom-out" className="text-3xl font-bold">
+            Top Products
+          </h1>
+          <p data-aos="fade-up" className="text-xs text-gray-400">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+            asperiores modi Sit asperiores modi
+          </p>
+        </div>
+
+        {/* body section */}
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
+        gap-20 md:gap-5 place-items-center"
+        >
+          {ProductsData.map((product) => (
+            <div className="" key={product.id}>
+              {/* image section */}
+              <div
+                data-aos="zoom-in"
+                className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 
+                dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group
+                 max-w-[300px]"
+              >
+                <img className="" src={product.img} alt={product.title} />
+              </div>
+              {/* details section */}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
