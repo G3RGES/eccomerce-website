@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Products from "./components/Products";
+import TopProducts from "./components/TopProducts";
 
 const App = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <Products />
+      <TopProducts />
     </div>
   );
 };
