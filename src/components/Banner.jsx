@@ -15,7 +15,17 @@ const Banner = () => {
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
           {/* image section */}
+          <div data-aos="zoom-out">
+            <img
+              src={BannerImg}
+              alt="banner_img"
+              className="max-w-[400px] h-[350px] w-full mx-auto
+               drop-shadow-[-10px_10px_12px_rgba(0,0,0,1)] object-cover"
+            />
+          </div>
+
           {/* text section */}
+          <div className=""></div>
         </div>
       </div>
     </div>
