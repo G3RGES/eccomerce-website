@@ -13,6 +13,7 @@ import TopProducts from "./components/TopProducts";
 import Banner from "./components/Banner";
 import Subscribe from "./components/Subscribe";
 import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 
 const App = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const App = () => {
       <Subscribe />
       <Products />
       <Testimonials />
+      <Footer />
     </div>
   );
 };
