@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
 
@@ -30,7 +31,7 @@ const imageList = [
   },
 ];
 
-const Hero = () => {
+const Hero = ({ handleOrderPopup }) => {
   var settings = {
     dots: false,
     arrows: false,
@@ -90,6 +91,7 @@ const Hero = () => {
                     <button
                       className="bg-gradient-to-r from-primary to-secondary 
                 hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
+                      onClick={handleOrderPopup}
                     >
                       Order now
                     </button>
