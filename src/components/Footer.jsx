@@ -67,6 +67,20 @@ const Footer = () => {
           </div>
 
           {/* footer links */}
+          <div className="grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
+            <div>
+              <div className="py-8 px-4 ">
+                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+                  Important Links
+                </h1>
+                <ul className="">
+                  {FooterLinks.map((link, idx) => (
+                    <li className="" key={idx}></li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
