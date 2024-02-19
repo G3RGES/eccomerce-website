@@ -10,7 +10,10 @@ const Popup = ({ orderPopup, setOrderPopup }) => {
     <>
       {orderPopup && (
         <div className="">
-          <div className=""></div>
+          <div
+            className="h-screen w-screen fixed top-0 left-0 bg-black/50 z-50 
+          backdrop-blur-md "
+          ></div>
         </div>
       )}
     </>
