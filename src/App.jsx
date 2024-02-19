@@ -14,8 +14,15 @@ import Banner from "./components/Banner";
 import Subscribe from "./components/Subscribe";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
+import Popup from "./components/Popup";
 
 const App = () => {
+  const [orderPopup, setOrderPopup] = React.useState(false);
+
+  const handleOrderPopup = () => {
+    setOrderPopup(!orderPopup);
+  };
+
   useEffect(() => {
     AOS.init({
       offset: 100,
@@ -37,6 +44,7 @@ const App = () => {
       <Products />
       <Testimonials />
       <Footer />
+      <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
     </div>
   );
 };
