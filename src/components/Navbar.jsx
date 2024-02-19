@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /*  eslint-disable no-unused-vars */
 import React from "react";
 
@@ -58,7 +59,7 @@ const DropdownLinks = [
   },
 ];
 
-const Navbar = () => {
+const Navbar = ({ handleOrderPopup }) => {
   return (
     <div
       className="shadow-md bg-white dark:bg-gray-900 dark:text-white 
@@ -99,7 +100,7 @@ const Navbar = () => {
               className="bg-gradient-to-r from-primary to-secondary
              transition-all duration-200 text-white  py-1 px-4 rounded-full
               flex items-center gap-3 group"
-              onClick={() => alert("order not available yet")}
+              onClick={() => handleOrderPopup()}
             >
               <span className="group-hover:block hidden transition-all duration-200 ">
                 Order
