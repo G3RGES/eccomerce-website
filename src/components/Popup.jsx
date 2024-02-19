@@ -16,10 +16,43 @@ const Popup = ({ orderPopup, setOrderPopup }) => {
           >
             <div
               className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white 
-              dark:bg-gray-900 p-4 shadow-md rounded-md dark:text-white"
+              dark:bg-gray-900 p-4 shadow-md rounded-md dark:text-white duration-200
+              w-[300px] "
             >
               {/* header */}
+              <div className="flex items-center justify-between">
+                <div>
+                  <h1>Order Now</h1>
+                </div>
+                <div>
+                  <IoCloseOutline
+                    className="text-2xl cursor-pointer "
+                    onClick={() => setOrderPopup(false)}
+                  />
+                </div>
+              </div>
+
               {/* body */}
+              <div className="mt-4 ">
+                <input
+                  type="text"
+                  placeholder="Name..."
+                  className="w-full rounded-full border border-gray-300 dark:border-gray-500
+                  dark:bg-gray-800 px-2 py-1 mb-4"
+                />
+                <input
+                  type="email"
+                  placeholder="Email..."
+                  className="w-full rounded-full border border-gray-300 dark:border-gray-500
+                  dark:bg-gray-800 px-2 py-1 mb-4"
+                />
+                <input
+                  type="text"
+                  placeholder="Address..."
+                  className="w-full rounded-full border border-gray-300 dark:border-gray-500
+                  dark:bg-gray-800 px-2 py-1 mb-4"
+                />
+              </div>
             </div>
           </div>
         </div>
